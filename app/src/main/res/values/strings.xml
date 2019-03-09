@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">EmployeeDemo</string>
+
+    <!-- Error -->
+    <string name="error_internet">Please check your internet connection</string>
+    <string name="error_serverError">Something went wrong</string>
+
+    <!-- Employee list -->
+    <string name="employeeList_title">Employee List</string>
+
+    <!--Progress Dialog-->
+    <string name="progress_message">Please Wait...</string>
+
+    <!-- Employee Details -->
+    <string name="employeeDetail_title">Employee Details</string>
+    <string name="employeeDetail_applyLeave">Apply leave</string>
+    <string name="employeeDetail_viewLeave">View Leave</string>
+    <string name="employeeDetail_selectStartDate">Select Start Date</string>
+    <string name="employeeDetail_selectEndDate">Select End Date</string>
+    <string name="employeeDetail_description">Description*</string>
+    <string name="employeeDetail_apply">Apply</string>
+    <string name="employeeDetail_days">Days:</string>
+
+    <string name="leave_empName">Employee Name:</string>
+    <string name="leave_designation">Designation:</string>
+    <string name="leave_age">Age:</string>
+
+    <string name="employeeDetail_startDate">Please select start date</string>
+    <string name="employeeDetail_endDate">Please select end date</string>
+    <string name="employeeDetail_descriptionMissing">Please select description</string>
+
+    <string name="employeeDetail_leaveSuccess">Leave applied successfully.</string>
+    <string name="employeeDetail_leaveUnsuccess">Leave applied unsuccessful, Please try again.</string>
+
+    <!-- Leave list -->
+    <string name="leave_title">Leave Details</string>
+    <string name="leave_days">Days:</string>
+    <string name="leave_status">Status:</string>
+    <string name="leave_startDate">Start Date:</string>
+    <string name="leave_endDate">End date:</string>
+    <string name="leave_description">Description:</string>
+
+</resources>

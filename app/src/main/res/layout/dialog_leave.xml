@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/icons"
+    android:layout_marginBottom="@dimen/icons"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_new"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/margin">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/employeeDetail_applyLeave"
+                android:textColor="@color/appWhite"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="@dimen/icons_small"
+                android:layout_height="@dimen/icons_small"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/margin"
+                android:src="@drawable/img_cancel" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appWhite"
+            android:layout_margin="@dimen/margin_large"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_medium">
+
+            <TextView
+                android:id="@+id/txtStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:hint="@string/employeeDetail_selectStartDate"
+                android:textColor="@color/appblack"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/icons_extra_small"
+                android:layout_height="@dimen/icons_extra_small"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/margin"
+                android:src="@drawable/dropdown" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appWhite"
+            android:layout_margin="@dimen/margin_large"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_medium">
+
+            <TextView
+                android:id="@+id/txtEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:hint="@string/employeeDetail_selectEndDate"
+                android:textColor="@color/appblack"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/icons_extra_small"
+                android:layout_height="@dimen/icons_extra_small"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/margin"
+                android:src="@drawable/dropdown" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appWhite"
+            android:layout_margin="@dimen/margin_large"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_large"
+            android:paddingBottom="@dimen/margin_medium">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/employeeDetail_days"
+                android:textColor="@color/appblack"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="0"
+                android:textColor="@color/appblack"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:padding="@dimen/margin">
+
+            <EditText
+                android:id="@+id/edtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="@dimen/icons"
+                android:background="@color/appBrownBorder"
+                android:hint="@string/employeeDetail_description"
+                android:padding="@dimen/margin"
+                android:textSize="@dimen/text_size" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_large"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/employeeDetail_apply"
+                android:textColor="@color/appblack" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
